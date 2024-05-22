@@ -46,7 +46,13 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: none;
-  color: #858652;
+  color: #85beb4;
+}
+
+.navigation a:active,
+.navigation a:focus,
+.navigation a.selected {
+  color: rgb(231, 255, 153); /* Change to your desired color */
 }
 
 body {
@@ -170,9 +176,9 @@ p {
 
 #kitchentxt h3 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20pt;
+    font-size: 18pt;
     font-style: bold;
-    text-align: left;
+    text-align: center;
     color: #000000;
     text-align: left;
     line-height: 150%;
@@ -210,9 +216,9 @@ p {
 
 #gymtxt h3 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20pt;
+    font-size: 18pt;
     font-style: bold;
-    text-align: left;
+    text-align: center;
     color: #000000;
     text-align: left;
     line-height: 150%;
