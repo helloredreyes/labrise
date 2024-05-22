@@ -46,7 +46,13 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: none;
-  color: #858652;
+  color: #85beb4;
+}
+
+.navigation a:active,
+.navigation a:focus,
+.navigation a.selected {
+  color: rgb(231, 255, 153); /* Change to your desired color */
 }
 
 body {
@@ -157,8 +163,7 @@ p {
   align-content: center;
   opacity: 0;
   transform: translateX(-50px);
-  animation: slideInFromLeft 3s ease forwards;
-  padding:20px;
+  animation: fadeInLeft 2s forwards;
 }
 
 #highlight {
