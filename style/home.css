@@ -162,7 +162,7 @@ p {
   align-items: center;
   align-content: center;
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateX(-50%) translateY(-50px);
   animation: fadeInLeft 2s forwards;
 }
 
