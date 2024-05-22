@@ -313,6 +313,7 @@ footer {
   }
 }
 
+/* video animation */
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
