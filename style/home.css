@@ -110,8 +110,8 @@ p {
 }
 
 .banner img{
-    display: flex;
-    width:100%;
+  display: flex;
+  width:100%;
 }
 
 .main-menu {
@@ -156,10 +156,10 @@ p {
 
 #video {
   display: flex;
+  flex-direction: column;
   max-width: 100%;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  padding: 20px;
 }
 
 #highlight {
