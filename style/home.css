@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
+html {
+  .shippori-mincho-regular {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 200;
+    font-style: normal;
+  }      
+}
+
+:root {
+  --primary-color: #2D2D2D;
+  --secondary-color: #D8AB7C;
+  --accent1-color: #989428;
+  --accent2-color: #B68F62;
+
+  --heading-font: 'Shippori Mincho', serif;
+  --paragraph-font: 'Inter', sans-serif;
+
+  --nav-link-color: #ffffff;
+  --nav-hover-link-color: #858652;
+  --nav-hover-background-color: #000000;
+}
+  
+nav ul {
+  display: flexbox;
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+}
+  
+nav ul li {
+  display: inline;
+  margin-right: 0;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 13pt;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #858652;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  display: flow-root;
+  background-size: cover; 
+  background-position: center;
+}
+
+/* ANIMATION FOR ALL H3 */
+
+h3 {
+  opacity: 0; 
+  animation: slideInFromBottom 3s ease forwards;
+}
+
+/* ANIMATION FOR ALL p */
+p {
+  opacity: 0; 
+  animation: slideInFromRight 3s ease forwards;
+}
+
+/* HEADER */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  max-width: 100%;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.banner {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.banner img{
+    display: flex;
+    width:100%;
+}
+
+.main-menu {
+  display: flex;
+  max-width: 100%;
+  background-color: #858652;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.main-menu a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  font-style: light;
+  padding:20px;
+}
+
+/* MAIN BODY */
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInRight 2s forwards;
+}
+
+#introduction h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20pt;
+  font-style: bold;
+  text-align: left;
+  color: #858652;
+  text-align: left;
+  line-height: 150%;
+}
+
+#introduction p {
+  text-align: justify;
+}
+
+#video {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInFromLeft 3s ease backwards;
+}
+
+#highlight {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 2s forwards;
+}
+
+#highlight h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20pt;
+  font-style: bold;
+  text-align: left;
+  color: #858652;
+  text-align: left;
+  line-height: 150%;
+}
+
+#highlight p{
+  text-align: justify;
+  font-size: 13pt;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  row-gap: 10px;
+  background-color: #858652;
+}
+
+
+.contact {
+  display: flex;
+  max-width: 100%;
+  flex-direction: row;
+  column-gap: 30px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.contact a{
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.copyright {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#yt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#yt img {
+  max-width: 50px;
+  height: auto;
+  padding: 10px;
+}
+
+#yt a{
+  color:#ffffff;
+  text-decoration: none;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#yt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#copy a{
+  color:#ffffff;
+  text-decoration: none;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+/* ALL ANIMATION-------------------------------------------------------------------- */
+
+/* Fade-in from Left */
+@keyframes fadeInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-50px); /* Start slightly to the left */
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0); /* End at the original position */
+  }
+}
+
+/* Fade-In from Right */
+
+@keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(-50px); /* Start slightly to the left */
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0); /* End at the original position */
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
