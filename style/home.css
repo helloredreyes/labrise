@@ -157,7 +157,6 @@ p {
   max-width: 100%;
   justify-content: center;
   padding: 20px;
-  opacity: 0;
   transform: translateX(-50px);
   animation: slideInFromLeft 3s ease backwards;
 }
