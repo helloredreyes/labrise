@@ -132,9 +132,6 @@ p {
   max-width: 100%;
   justify-content: center;
   padding: 20px;
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: fadeInRight 2s forwards;
 }
 
 #introduction h3 {
